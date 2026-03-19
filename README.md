@@ -1,11 +1,7 @@
-# SimCLR
-A PyTorch implementation of SimCLR based on ICML 2020 paper [A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709).
+# Generative Contrastive Learning
 
 ![Network Architecture image from the paper](structure.png)
 
-## Requirements
-- [Anaconda](https://www.anaconda.com/download/)
-- [PyTorch](https://pytorch.org)
 ```
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 ```
