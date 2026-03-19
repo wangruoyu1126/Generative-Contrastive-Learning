@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=6,7 python main.py --batch_size 256 --epochs 1000 --pos_gen_weight 1 --neg_gen_weight 0
+
+optional arguments:
+--feature_dim                 Feature dim for latent vector [default value is 128]
+--temperature                 Temperature used in softmax [default value is 0.5]
+--k                           Top k most similar images used to predict the label [default value is 200]
+--batch_size                  Number of images in each mini-batch [default value is 512]
+--epochs                      Number of sweeps over the dataset to train [default value is 500]
+--neg_gen_weight
+
+
+CUDA_VISIBLE_DEVICES=4,5 python linear.py --batch_size 256 --epochs 200
+optional arguments:
+--model_path                  The pretrained model path [default value is 'results/128_0.5_200_512_500_model.pth']
+--batch_size                  Number of images in each mini-batch [default value is 512]
+--epochs                      Number of sweeps over the dataset to train [default value is 100]
+
+
+
